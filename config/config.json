@@ -1,0 +1,6 @@
+{
+  "env": "development",
+  "api": {
+    "articleSearch": "env:apidemo1"
+  }
+}
