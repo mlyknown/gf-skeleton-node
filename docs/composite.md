@@ -6,7 +6,7 @@
 
 同理，对于聚合层，需要部分接口private走授权，部分接口是public. 所以在nginx要如下配置：
 
-```json
+```Nginx
 location ~* /composite/.*/opt-auth/ {
   proxy_set_header X-Real-IP $remote_addr;
   rewrite /composite/(.*) /$1 break;
